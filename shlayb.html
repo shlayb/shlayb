@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>belajar buat doi</title>
+        <script src="https://kit.fontawesome.com/11fad7c8a5.js" crossorigin="anonymous"></script>
+        <style>
+            .myDiv{
+                width: 1920px;
+                height: 1080px;
+            }
+            .kotak{
+                width: 1920px;
+                height: 200px;
+                background-color: #e5d5c6;
+                border-radius: 30px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .h1{
+                font-size: 70px;
+                font-family: retron2000;
+                color: #b97836;
+                text-align: center;
+                top: 65px;
+            }
+            .gap{
+                width: 1080px;
+                height: 300px;
+            }
+            .fotouwu{
+                width: 400px;
+                height: 570px;
+                border-radius: 24px;
+                background-color: #e7b7a0;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 32px 0 rgba(0, 0, 0, 0.19);
+            }
+            .alic{
+                width: 308px;
+                height: 315px;
+                border-radius: 12px;
+            }
+            .play{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                font-size: 25px;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+                text-align: center;
+                border: none;
+                background-color: #efe6dd;
+            }
+            .play:hover {
+                background-color: #e5d5c6;
+            }
+            .play:active{
+                background-color: #e5d5c6;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+                transform: translateY(4px);
+            }
+            .judullagu{
+                font-size: 20px;
+                color: #000000;
+                font-family: retron2000;
+                text-align: none;
+                font-weight: 900;
+            }
+            .keshi{
+                font-family: retron2000;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: #efe6dd;">
+        <div class="myDiv">
+            <div class="kotak" style="position: absolute; top: 0;">
+                <h1 class="h1"> Alicia <i class="fas fa-heart"></i>  </h1>
+            </div>
+            <div class="gap"></div>
+            <div id="By" class="fotouwu" style="position: absolute; left: 150px;">
+                <img class="alic" src="https://media.discordapp.net/attachments/732450473390374973/893847640687673344/babe.png?width=660&height=675" alt="" 
+                style="position: absolute; left: 48px; top: 48px;">
+                <p class="judullagu" style="position: absolute; top: 380px; left: 48px;">Beside You</p>
+                <p class="keshi" style="position: absolute; top: 407px; left: 48px;">keshi</p>
+                <p style="position: absolute; font-size: 30px; left: 315px; top: 375px;"><i class="far fa-heart"></i></p>
+                <audio id="myAudio" autoplay>
+                    <source src="https://cdn.discordapp.com/attachments/881541248522022952/901489446103433216/y2mate.com_-_keshi_beside_you_Lyric_Video.mp3" type="audio/mp3">
+                </audio>
+                <button onclick="playaudio();" class="play" style="position: absolute; left: 170px; top: 470px;"> <i class="fas fa-play"></i></button>
+            </div>
+        </div>
+        <script>
+            var x = document.getElementById("myAudio"); 
+
+            function playaudio() {
+                if (x.paused)
+                  x.play();
+                else
+                  x.pause();
+            }
+            myAudio=document.getElementById("myAudio");
+            myAudio=document.addEventListener("canplaythrough", function() {
+                this.currentTime = 12;
+                this.play();
+            })
+        </script>
+    </body>
+</html>
