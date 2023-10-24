@@ -1,0 +1,90 @@
+body {
+  background-color: #062925;
+}
+.navbar-expand-lg {
+  background-color: #062925;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+.navbar-brand {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 30px;
+  color: #b8e1dd;
+  left: 0px;
+}
+.navbar-brand:hover {
+  color: #b8e1dd;
+}
+.navbar-brand:active {
+  color: #b8e1dd;
+}
+.navbar-brand:focus {
+  color: #b8e1dd;
+}
+.navbar-toggler {
+  color: #b8e1dd;
+  border-color: #b8e1dd;
+}
+.navbar-toggler-icon {
+  background-color: #b8e1dd;
+}
+.navbar-collapse {
+  font-size: 20px;
+  padding-left: 400px;
+  font-family: Consolas;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav-link {
+  color: #b8e1dd;
+  margin-left: 40px;
+}
+.home {
+  width: 100%;
+  height: 100%;
+}
+.foto-home {
+  width: 244px;
+  height: 305px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  border: 5px solid #b8e1dd;
+  background: url(<path-to-image>), lightgray -1186.183px -978.755px / 375.94% 400% no-repeat;
+  position: relative;
+  left: 810px;
+  top: 65px;
+}
+.hello {
+  color: #d5ece9;
+  font-family: Consolas;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 90px;
+  top: 170px;
+}
+.nama {
+  color: #d5ece9;
+  font-family: DM Mono;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  left: 90px;
+  top: 200px;
+}
+.title {
+  color: #d5ece9;
+  font-family: Consolas;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 90px;
+  top: 400px;
+}
