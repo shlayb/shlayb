@@ -51,7 +51,7 @@ body {
   border-radius: 40px;
   border: 5px solid #b8e1dd;
   background: url(<path-to-image>), lightgray -1186.183px -978.755px / 375.94% 400% no-repeat;
-  position: relative;
+  position: absolute;
   left: 810px;
   top: 65px;
 }
