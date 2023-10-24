@@ -24,9 +24,10 @@ body {
 .navbar-toggler {
   color: #b8e1dd;
   border-color: #b8e1dd;
+  border: 2px solid #b8e1dd;
 }
 .navbar-toggler-icon {
-  background-color: #b8e1dd;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23b8e1dd' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-collapse {
   font-size: 20px;
@@ -40,9 +41,27 @@ body {
   color: #b8e1dd;
   margin-left: 40px;
 }
+.nav-link:focus {
+  color: #b8e1dd;
+}
+.nav-link:active {
+  color: #b8e1dd;
+}
 .home {
   width: 100%;
   height: 100%;
+}
+.home1 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+}
+.home2 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
 }
 .foto-home {
   width: 244px;
@@ -52,8 +71,8 @@ body {
   border: 5px solid #b8e1dd;
   background: url(<path-to-image>), lightgray -1186.183px -978.755px / 375.94% 400% no-repeat;
   position: absolute;
-  left: 810px;
-  top: 65px;
+  left: 180px;
+  top: 50px;
 }
 .hello {
   color: #d5ece9;
@@ -64,7 +83,7 @@ body {
   line-height: normal;
   position: absolute;
   left: 90px;
-  top: 170px;
+  top: 70px;
 }
 .nama {
   color: #d5ece9;
@@ -75,7 +94,7 @@ body {
   line-height: normal;
   position: absolute;
   left: 90px;
-  top: 200px;
+  top: 100px;
 }
 .title {
   color: #d5ece9;
@@ -86,5 +105,74 @@ body {
   line-height: normal;
   position: absolute;
   left: 90px;
-  top: 400px;
+  top: 300px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
+  .navbar-toggler {
+    border: 2px solid #b8e1dd;
+    margin-right: 50px;
+  }
+  .navbar-collapse {
+    padding-left: 0px;
+  }
+  .home1 {
+    width: 100%;
+    height: 25%;
+    position: relative;
+  }
+  .home2 {
+    width: 100%;
+    height: 660px;
+    position: relative;
+    top: 0px;
+  }
+  .foto-home {
+    width: 488px;
+    height: 610px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 5px solid #b8e1dd;
+    background: url(<path-to-image>), lightgray -1186.183px -978.755px / 375.94% 400% no-repeat;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+  }
+  .hello {
+    color: #d5ece9;
+    font-family: Consolas;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 150px;
+    top: 70px;
+  }
+  .nama {
+    color: #d5ece9;
+    font-family: DM Mono;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+  }
+  .title {
+    color: #d5ece9;
+    font-family: Consolas;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 150px;
+    top: 300px;
+  }
 }
