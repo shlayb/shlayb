@@ -210,16 +210,16 @@ body {
   }
   .home {
     width: 100%;
-    height: 100%;
+    height: 50%;
   }
   .home1 {
     width: 100%;
-    height: 25%;
+    height: 35%;
     position: relative;
   }
   .home2 {
     width: 100%;
-    height: 660px;
+    height: 60%;
     position: relative;
     top: 0px;
   }
@@ -270,7 +270,7 @@ body {
   }
   .about {
     width: 100%;
-    height: 100%;
+    height: 60%;
     background-color: #0a3c36;
   }
   .aboutme1 {
