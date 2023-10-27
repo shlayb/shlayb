@@ -5,6 +5,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@1,900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,8 +23,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about">About Me</a>
             <a class="nav-link" href="#">Galery</a>
             <a class="nav-link" href="#">Blog</a>
             <a class="nav-link" href="#">Contact</a>
@@ -25,9 +32,9 @@
         </div>
       </div>
     </nav>
-    <div class="home">
+    <div id="home" class="home">
       <div class="home2">
-        <img src="foto-home.png" alt="png" class="foto-home" />
+        <img src="foto-home.png" alt="png" class="foto-home"  />
       </div>
       <div class="home1">
         <p class="hello">Hello, I'am</p>
@@ -35,6 +42,27 @@
         <p class="title">Industiral Engineering Student at<br />Yogyakarta State University</p>
       </div>
     </div>
+    <div id="about" class="about" >
+      <h1 class="aboutme">~About Me~</h1>
+      <div class="aboutme1"  >
+        <img src="foto-about.jpg" alt="jpg" class="foto-about" />
+      </div>
+      <div class="aboutme2">
+        <h2 class="titleabout">I am Engineer 4.0</h2>
+        <p class="paragraf">First year Yogyakarta State University student,</br>class of 2023, industrial engineering study program</br>who has a strong passion for programming, mathematics and</br>management to develop himself.</p>
+        <p class="data">Name     : Sholahudin Al Ayyubi
+        </br>Age     : 18 Years Old
+        </br>Address    : Wirokerten, Banguntapan, Bantul
+        </br>Religion    : Islam
+        </br>Status   : Student
+        </br>Hobby     : Reading, Coding, and Playing Games
+        </p>
+        <a href="https://api.whatsapp.com/send/?phone=6285643586750&amp;text=Assalamualaikum">
+          <button class="tombol" >Contact Me</button>
+        </a>
+      </div>
+    </div>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script scr="script.js"></script>
 </html>
