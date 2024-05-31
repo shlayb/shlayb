@@ -1,0 +1,2 @@
+npx tailwindcss -i ./src/css/input.css -o ./public/src/output.css --watch
+git push -u origin main
