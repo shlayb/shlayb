@@ -789,6 +789,10 @@ video {
     margin-top: 0.5rem;
   }
 
+  .max-lg\:mt-4{
+    margin-top: 1rem;
+  }
+
   .max-lg\:grid{
     display: grid;
   }
