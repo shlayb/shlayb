@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       aspectRatio: {
-        '4/3': '4 / 3',
+        '3/4': '3 / 4',
       },
     },
     fontFamily: { Poppins: ['Poppins', 'sans-serif'] },
