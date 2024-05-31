@@ -1,2 +1,5 @@
 npx tailwindcss -i ./src/css/input.css -o ./public/src/output.css --watch
+
+git add .
+git commit -m "Initial commit"
 git push -u origin main
