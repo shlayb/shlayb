@@ -793,6 +793,14 @@ video {
     margin-top: 1rem;
   }
 
+  .max-lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .max-lg\:mt-3{
+    margin-top: 0.75rem;
+  }
+
   .max-lg\:grid{
     display: grid;
   }
