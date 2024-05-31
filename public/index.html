@@ -11,13 +11,47 @@
     <title>Ayyubi</title>
   </head> 
   <body class="grid  bg-gray-100 w-full ">
+    <nav class="bg-gray-100 font-Poppins">
+      <div class="max-w-6xl mx-32 px-12 max-lg:mx-auto">
+        <div class="flex">
+          <div class="flex w-full">
+            <!-- Website Logo -->
+            <div class="mx-10 max-lg:item-start max-lg:mx-0">
+              <a href="#" class="flex items-center py-6 px-2">
+                <span class="text-2xl font-bold text-gray-700">SHLAYB</span>
+              </a>
+            </div>
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex align-middle space-x-1">
+              <a href="#" class="py-7 px-2 text-gray-700 font-semibold hover:text-gray-900 transition duration-300">Home</a>
+              <a href="#stack" class="py-7 px-2 text-gray-700 font-semibold hover:text-gray-900 transition duration-300">Skill</a>
+            </div>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg class="w-6 h-6 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li><a href="index.html" class="block text-sm px-2 py-4 text-gray-400 font-semibold hover:bg-gray-200 transition duration-300">Home</a></li>
+          <li><a href="#stack" class="block text-sm px-2 py-4 hover:bg-gray-200 font-semibold transition duration-300">Skill</a></li>
+        </ul>
+      </div>
+    </nav>
     <section id="home" class="container bg-gray-100 mx-auto p-0 max-w-screen-xl h-lvh font-Poppins max-lg:grid box-border">
-      <div class="relative flex max-lg:grid justify-center mt-40 ">
+      <div class="relative flex max-lg:grid justify-center mt-28 max-lg:mt-16">
         <div class="">
           <img class="relative max-w-72 max-h-72 rounded-full  max-lg:mx-auto shadow-2xl" src="../src/profile pict.jpg" alt="image description">
         </div>
         <div class="pr-30  mx-7">
-          <p id="Sh" class="text-7xl font-semibold relative justify-end  mt-14 max-lg:text-6xl">Sholahudin</p>
+          <p id="Sh" class="text-7xl font-semibold relative justify-end  mt-14 max-lg:mt-4 max-lg:text-6xl">Sholahudin</p>
           <p id="al" class="text-5xl font-medium relative justify-end max-lg:grid max-lg:justify-center max-lg:text-3xl">
             Al Ayyubi <a id="ig" type="button" class="relative text-sm py-3 px-5 rounded-full text-gray-100 ml-3 align-middle bg-black hover:shadow-xl max-lg:px-3 max-lg:text-center max-lg:ml-0 max-lg:mt-2" href="./blog/index.html">Click Me!</a>
           </p>
@@ -32,25 +66,33 @@
         </div>
       </div>
     </section>
-    <section id="about-me" class="mx-auto p-0 max-w-screen-xl h-lvh font-Poppins grid max-lg:mt-10 ">
+    <section id="stack" class="mx-auto p-0 max-w-screen-xl h-lvh font-Poppins grid max-lg:mt-10 ">
       <h1 class="text-5xl font-semibold relative text-center mt-14">Skill Stack</h1>
       <div class="relative flex max-lg:grid justify-center m-10">
-        <div class="mx-4 text-center h-72 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
+        <div class="mx-4 text-center h-72 max-lg:w-72 max-lg:aspect-3/4 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
           <h1 class="text-5xl font-medium relative text-center mt-6"><i class="fa-brands fa-python"></i></h1>
           <h2 class="text-3xl font-medium relative text-center mt-2">Python</h2>
           <p class="p-0 mx-3 mt-5 text-base font-normal text-center">I have proficient skills in Python programming, especially for various technical projects.</p>
         </div>
-        <div class="mx-4 text-center h-72 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
+        <div class="mx-4 text-center h-72 max-lg:w-72 max-lg:aspect-3/4 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
           <h1 class="text-5xl font-medium relative text-center mt-6"><i class="fa-brands fa-js"></i></i></h1>
           <h2 class="text-3xl font-medium relative text-center mt-2">Javascript</h2>
           <p class="p-0 mx-3 mt-5 text-base font-normal text-center">I am skilled in JS programming, with a strong focus on developing versatile technical projects.</p>
         </div>
-        <div class="mx-4 text-center h-72 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
+        <div class="mx-4 text-center h-72 max-lg:w-72 max-lg:aspect-3/4 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
           <h1 class="text-5xl font-medium relative text-center mt-6"><i class="fa-brands fa-figma"></i></h1>
           <h2 class="text-3xl font-medium relative text-center mt-2">Figma</h2>
           <p class="p-0 mx-3 mt-5 text-base font-normal text-center">I am proficient in using Figma, with a strong focus on creating versatile design projects.</p>
         </div>
       </div>
     </section>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+  
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
