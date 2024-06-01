@@ -15,7 +15,12 @@
     <title>Ayyubi</title>
   </head>
   <body class="grid bg-gray-100">
-    <nav class="bg-gray-100 font-Poppins">
+    <div id="starting" class="container flex w-lvw h-screen  justify-center font-Poppin mx-auto">
+      <div class="my-auto ">
+        <button href="#home" class="starting  flex text-slate-200 bg-slate-800 px-7 py-3 text-xl font-semibold rounded-xl"><svg class="animate-spin h-5 w-5 mr-3 bg-slate-200" viewBox="0 0 24 24"></svg>Start</button>
+      </div>
+    </div>
+    <nav class="ininav hidden bg-gray-100 font-Poppins">
       <div class="max-w-6xl mx-32 px-8 max-lg:mx-auto max-lg:px-4">
         <div class="flex">
           <div class="flex w-full justify-between">
@@ -51,7 +56,7 @@
         </ul>
       </div>
     </nav>
-    <section id="home" class="container gap-0 bg-gray-100 mx-auto p-0 max-w-screen-xl h-full font-Poppins max-lg:grid box-border">
+    <section id="home" class="inihome hidden container gap-0 bg-gray-100 mx-auto p-0 max-w-screen-xl h-full font-Poppins box-border">
       <div class="flex align-middle max-lg:grid max-lg:gap-0 justify-center my-20 max-lg:mt-16 max-lg:mb-5">
         <div class="relative w-72 h-72 lg:hidden rounded-full max-lg:mx-auto shadow-2xl">
           <img class="object-cover rounded-full" src="../src/profile pict.jpg" alt="image description" />
@@ -66,7 +71,7 @@
         </div>
       </div>
     </section>
-    <section id="aboutme" class="mx-auto p-0 max-w-screen-xl h-lvh font-Poppins grid max-lg:mt-16">
+    <section id="aboutme" class="iniabout hidden mx-auto p-0 max-w-screen-xl h-lvh font-Poppins max-lg:mt-16">
       <div class="relative flex max-lg:grid justify-center mt-24 mx-40 max-lg:mx-auto max-lg:mt-0">
         <h1 class="hidden text-2xl font-semibold max-lg:block max-lg:text-center max-lg:my-5">About Me</h1>
         <div class="h-80 ml-10 rounded-t-xl aspect-3/4 border-b-[6px] border-black max-lg:mx-auto max-lg:mb-5">
@@ -83,7 +88,7 @@
         </div>
       </div>
     </section>
-    <section id="stack" class="mx-auto max-w-screen-xl h-full font-Poppins grid max-lg:mt-16">
+    <section id="stack" class="inistack hidden mx-auto max-w-screen-xl h-full font-Poppins max-lg:mt-16">
       <h1 class="text-5xl font-semibold text-center my-10 max-lg:my-0 max-lg:mt-10">Skill Stack</h1>
       <div class="relative flex max-lg:grid justify-center my-20 m-5 max-lg:my-5">
         <div class="mx-5 text-center h-72 max-lg:w-72 max-lg:aspect-3/4 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
@@ -121,9 +126,24 @@
     <script>
       const btn = document.querySelector('button.mobile-menu-button');
       const menu = document.querySelector('.mobile-menu');
+      const inistart = document.querySelector('.starting');
+      const nav = document.querySelector('.ininav');
+      const home = document.querySelector('.inihome');
+      const about = document.querySelector('.iniabout');
+      const stack = document.querySelector('.inistack');
+
+      const start2 = document.getElementById('starting')
 
       btn.addEventListener('click', () => {
         menu.classList.toggle('hidden');
+      });
+      inistart.addEventListener('click', () => {
+        start2.remove()
+        nav.classList.toggle('hidden');
+        home.classList.toggle('hidden');
+        home.classList.toggle('max-lg:grid');
+        about.classList.toggle('hidden');
+        stack.classList.toggle('hidden');
       });
     </script>
   </body>
