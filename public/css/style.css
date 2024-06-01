@@ -1263,6 +1263,10 @@ video {
     justify-content: center;
   }
 
+  .max-lg\:gap-0 {
+    gap: 0px;
+  }
+
   .max-lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
