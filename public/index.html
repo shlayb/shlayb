@@ -33,9 +33,9 @@
             </div>
           </div>
           <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center">
+          <div class="md:hidden sm:hidden flex items-center">
             <button class="outline-none mobile-menu-button">
-              <svg class="w-6 h-6 text-gray-800" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-7 h-7 text-gray-800" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
@@ -43,7 +43,7 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden mobile-menu">
+      <div class="hidden md:hidden mobile-menu">
         <ul class="mx-5">
           <li><a href="index.html" class="block border-b-[1px] border-gray-800 text-sm px-2 py-4 text-gray-600 font-semibold hover:bg-gray-200 transition duration-300">Home</a></li>
           <li><a href="#aboutme" class="block border-b-[1px] border-gray-800 text-sm px-2 py-4 text-gray-600 font-semibold hover:bg-gray-200 transition duration-300">About</a></li>
@@ -53,13 +53,16 @@
     </nav>
     <section id="home" class="container gap-0 bg-gray-100 mx-auto p-0 max-w-screen-xl h-full font-Poppins max-lg:grid  box-border">
       <div class="flex align-middle max-lg:grid max-lg:gap-0 justify-center my-20 max-lg:mt-16 max-lg:mb-5">
-        <div class="max-h-72">
-          <img class="relative max-w-72 max-h-72 rounded-full max-lg:mx-auto shadow-2xl" src="../src/profile pict.jpg" alt="image description" />
+        <div class="relative w-72 h-72 lg:hidden rounded-full max-lg:mx-auto  shadow-2xl">
+          <img class="object-cover rounded-full" src="../src/profile pict.jpg" alt="image description" />
         </div>
-        <div class="mx-10">
+        <div class="mx-16">
           <p class="text-2xl font-medium justify-end mt-16 max-lg:text-xl max-lg:mt-10 max-lg:text-center">Hi, i'm</p>
           <p id="Sh" class="text-7xl font-semibold relative justify-end max-lg:text-4xl max-lg:text-center">Ayyubi</p>
           <p id="al" class="text-2xl font-normal relative mt-3 justify-end max-lg:grid max-lg:justify-center max-lg:text-xl">Engineering Student</p>
+        </div>
+        <div class="relative w-72 h-72 max-lg:hidden rounded-full max-lg:mx-auto shadow-2xl">
+          <img class="object-cover rounded-full" src="../src/profile pict.jpg" alt="image description" />
         </div>
       </div>
     </section>
