@@ -1105,10 +1105,6 @@ video {
     aspect-ratio: 3 / 4;
   }
 
-  .max-lg\:h-full {
-    height: 100%;
-  }
-
   .max-lg\:w-72 {
     width: 18rem;
   }
