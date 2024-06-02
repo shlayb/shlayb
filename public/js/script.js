@@ -5,6 +5,8 @@ const nav = document.querySelector(".ininav");
 const home = document.querySelector(".inihome");
 const about = document.querySelector(".iniabout");
 const stack = document.querySelector(".inistack");
+const project = document.querySelector("#project");
+const contact = document.querySelector("#contact");
 
 const start2 = document.getElementById("starting");
 
@@ -20,6 +22,9 @@ inistart.addEventListener("click", () => {
   about.classList.add("flex");
   stack.classList.remove("hidden");
   stack.classList.add("flex");
+  project.classList.remove("hidden");
+  project.classList.add("flex");
+  contact.classList.remove("hidden");
 });
 
 window.onscroll = function () {
@@ -38,22 +43,27 @@ window.onscroll = function () {
 const mode = document.getElementById("dark-light");
 const modebtn = document.getElementById("dark-button");
 const html = document.querySelector("html");
+const modee = document.querySelector(".darkbtn");
 
 mode.addEventListener("click", () => {
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
     mode.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
+    modee.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
   } else {
     html.classList.add("dark");
     mode.innerHTML = '<i class="fa-regular fa-lightbulb"></i>';
+    modee.innerHTML = '<i class="fa-regular fa-lightbulb"></i>';
   }
 });
 modebtn.addEventListener("click", () => {
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
+    modee.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
     mode.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
   } else {
     html.classList.add("dark");
+    modee.innerHTML = '<i class="fa-regular fa-lightbulb"></i>';
     mode.innerHTML = '<i class="fa-regular fa-lightbulb"></i>';
   }
 });

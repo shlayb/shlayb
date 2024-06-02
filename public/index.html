@@ -35,15 +35,16 @@
               <a href="#body" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900 dark:text-light">Home</a>
               <a href="#aboutme" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900 dark:text-light">About</a>
               <a href="#stack" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900 dark:text-light">Skill</a>
+              <a href="#project" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900 dark:text-light">Projects</a>
+              <a href="#contact" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900 dark:text-light">Contact</a>
               <a id="dark-light" class="mx-5 px-2 py-7 text-xl font-semibold transition duration-300 hover:text-gray-900 dark:text-light"><i class="fa-solid fa-lightbulb"></i></a>
             </div>
           </div>
           <!-- Mobile menu button -->
-          <div class="flex items-center md:hidden">
+          <div id="mobile-menu" class="flex items-center md:hidden">
             <button id="dark-button">
-              <a class="mx-5 px-2 py-7 text-xl font-semibold transition duration-300 hover:text-gray-900 dark:text-light"><i class="fa-solid fa-lightbulb"></i></a>
+              <a class="darkbtn mx-5 px-2 py-7 text-xl font-semibold transition duration-300 hover:text-gray-900 dark:text-light"><i class="fa-solid fa-lightbulb"></i></a>
             </button>
-
             <button class="mobile-menu-button outline-none">
               <svg class="h-7 w-7 text-gray-800 dark:text-light" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
@@ -64,6 +65,9 @@
           <li>
             <a href="#stack" class="block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200 dark:border-light dark:text-light">Skill</a>
           </li>
+          <li>
+            <a href="#project" class="block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200 dark:border-light dark:text-light">Projects</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -72,7 +76,7 @@
 
     <section id="home" class="inihome container mx-auto box-border hidden h-auto max-w-screen-xl gap-0 bg-gray-100 p-0 font-Poppins dark:bg-dark">
       <div class="my-20 flex justify-center align-middle max-lg:mb-5 max-lg:mt-16 max-lg:grid max-lg:gap-0">
-        <div class="relative h-72 w-72 rounded-full shadow-2xl dark:shadow-slate-800 max-lg:mx-auto lg:hidden">
+        <div class="relative h-72 w-72 rounded-full shadow-2xl dark:shadow-slate-800 max-lg:mx-auto lg:hidden hover:-translate-y-1 hover:scale-105 duration-500">
           <img class="rounded-full object-cover" src="../src/profile pict.jpg" alt="image description" />
         </div>
         <div class="mx-16">
@@ -80,31 +84,31 @@
           <p id="Sh" class="relative justify-end text-7xl font-semibold text-primary dark:text-light max-lg:text-center max-lg:text-4xl">Ayyubi</p>
           <p id="al" class="relative mt-3 justify-end text-2xl font-normal text-primary dark:text-light max-lg:grid max-lg:justify-center max-lg:text-xl">Engineering Student</p>
         </div>
-        <div class="relative h-72 w-72 rounded-full shadow-2xl dark:shadow-slate-800 max-lg:mx-auto max-lg:hidden">
+        <div class="relative h-72 w-72 rounded-full shadow-2xl dark:shadow-slate-800 max-lg:mx-auto max-lg:hidden hover:-translate-y-1 hover:scale-105 duration-500">
           <img class="rounded-full object-cover" src="../src/profile pict.jpg" alt="image description" />
         </div>
       </div>
     </section>
 
-    <section id="aboutme" class="iniabout mx-auto hidden h-lvh max-w-screen-xl justify-center p-0 font-Poppins max-lg:mt-16 max-lg:w-full">
+    <section id="aboutme" class="iniabout mx-auto hidden h-lvh max-w-screen-xl justify-center p-0 font-Poppins max-lg:mt-16 max-lg:h-full max-lg:w-full">
       <div class="relative mx-auto mt-28 flex justify-center align-middle text-primary dark:text-light max-lg:mx-auto max-lg:mt-0 max-lg:grid">
         <h1 class="hidden text-2xl font-semibold max-lg:my-5 max-lg:block max-lg:text-center">About Me</h1>
         <div class="ml-10 aspect-3/4 h-80 rounded-t-xl border-b-[6px] border-black max-lg:mx-auto max-lg:mb-5">
           <img class="aspect-3/4 object-cover" src="./src/aboutme.png" alt="ganteng bgt" />
         </div>
         <div class="mx-16 max-lg:mt-5 max-lg:text-center">
-          <h1 class="my-3 mb-10 text-2xl font-semibold max-lg:hidden">About Me</h1>
+          <h1 class="my-3 mb-8 text-2xl font-semibold max-lg:hidden">About Me</h1>
           <p class="text-lg font-medium">My name is</p>
           <p class="mb-1 text-5xl font-bold">Sholahudin</p>
           <p class="mb-4 text-2xl font-semibold">Al Ayyubi</p>
-          <div class="relative h-24 max-w-[450px]">
+          <div class="relative h-auto max-w-[450px]">
             <p class="text-base font-normal">Love learning new things and have a strong curiosity. I am a freshman student at Yogyakarta State University with a passion for programming, math, and design.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="stack" class="inistack mx-auto hidden h-lvh max-w-screen-xl justify-center font-Poppins max-lg:mt-16">
+    <section id="stack" class="inistack mx-auto hidden h-lvh max-w-screen-xl justify-center font-Poppins max-lg:h-full max-lg:mt-12">
       <div class="relative mx-auto my-20 justify-center text-primary max-lg:mx-auto max-lg:mt-0 max-lg:grid">
         <h1 class="my-8 text-center text-5xl font-semibold text-primary dark:text-light max-lg:my-0 max-lg:mt-10">Skill Stack</h1>
         <div class="relative m-5 my-10 flex justify-center text-primary dark:text-light max-lg:my-5 max-lg:grid">
@@ -148,7 +152,71 @@
       </div>
     </section>
 
-    <section id="" class="inistack mx-auto hidden h-lvh max-w-screen-xl justify-center font-Poppins max-lg:mt-16"></section>
+    <section id="project" class="iniproject hidden mx-auto h-full max-w-screen-xl justify-center font-Poppins max-lg:h-full max-lg:mt-16">
+      <div class="relative grid mx-auto my-20 justify-center text-primary max-lg:mx-auto max-lg:mt-0 max-lg:grid">
+        <div class="">
+          <h1 class="my-8 text-center text-5xl font-semibold text-primary dark:text-light max-lg:my-0 max-lg:mt-10">Projects</h1>
+        </div>
+        <div class="relative grid grid-cols-3 max-lg:grid-cols-1 justify-center mx-auto my-10 ">
+          <div class="projectbox">
+            <a href="#!" class="">
+              <img class="rounded-t-2xl object-cover w-full max-h-[50%]" src="./src/content/anjay.jpeg"  alt="">
+            </a>
+            <div class="grid m-3">
+              <h2 class="mb-1 text-lg font-semibold text-primary dark:text-light">ini judul project</h2>
+              <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam voluptate maxime adipisci voluptatem officia. </p>
+              <div class="flex justify-end m-2 mt-0">
+                <button class=" rounded-md mb-1 px-5 text-right py-2 text-sm font-medium text-light bg-indigo-500 transition hover:scale-105 hover:shadow-xl hover:bg-indigo-600  focus:outline-none focus:ring active:text-indigo-500">More</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectbox">
+            <a href="#!" class="">
+              <img class="rounded-t-2xl object-cover w-full max-h-[50%]" src="./src/content/anjay.jpeg"  alt="">
+            </a>
+            <div class="grid m-3">
+              <h2 class="mb-1 text-lg font-semibold text-primary dark:text-light">ini judul project</h2>
+              <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam voluptate maxime adipisci voluptatem officia. </p>
+              <div class="flex justify-end m-2 mt-0">
+                <button class=" rounded-md mb-1 px-5 text-right py-2 text-sm font-medium text-light bg-indigo-500 transition hover:scale-105 hover:shadow-xl hover:bg-indigo-600  focus:outline-none focus:ring active:text-indigo-500">More</button>
+              </div>
+            </div>
+          </div>
+          <div class="projectbox">
+            <a href="#!" class="">
+              <img class="rounded-t-2xl object-cover w-full max-h-[50%]" src="./src/content/anjay.jpeg"  alt="">
+            </a>
+            <div class="grid m-3">
+              <h2 class="mb-1 text-lg font-semibold text-primary dark:text-light">ini judul project</h2>
+              <p class="text-left text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam voluptate maxime adipisci voluptatem officia. </p>
+              <div class="flex justify-end m-2 mt-0">
+                <button class=" rounded-md mb-1 px-5 text-right py-2 text-sm font-medium text-light bg-indigo-500 transition hover:scale-105 hover:shadow-xl hover:bg-indigo-600  focus:outline-none focus:ring active:text-indigo-500">More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="inicontact hidden mx-auto h-full min-w-max justify-center font-Poppins max-lg:h-full max-lg:mt-16">
+      <div class="relative grid mx-auto justify-center text-primary max-lg:mx-auto max-lg:mt-0 max-lg:grid">
+        <div class="">
+          <h1 class=" text-center text-5xl font-semibold text-primary dark:text-light max-lg:my-0 max-lg:mt-10">Contact me</h1>
+        </div>
+        <div class="w-full my-24 flex max-lg:grid max-lg:grid-cols-3 justify-center"> 
+          <button type="button" href="" class="contactbox"><i class="fa-brands fa-instagram"></i></button>          
+          <button type="button" href="" class="contactbox"><i class="fa-brands fa-discord"></i></button>          
+          <button type="button" href="" class="contactbox"><i class="fa-brands fa-linkedin-in"></i></button>          
+          <button type="button" href="" class="contactbox"><i class="fa-brands fa-github"></i></button>          
+          <button type="button" href="" class="contactbox"><i class="fa-regular fa-envelope"></i></button>          
+        </div>
+      </div>
+      <div class="flex justify-normal items-center w-full bg-dark h-36 dark:bg-semidark ">
+        <div class="mx-10">
+        <h1 class="text-xl font-medium text-light">Made with ❤️ by <a href="shlayb.vercel.app" class="font-bold">SHLAYB</a></h1></div>
+      </div>
+    </section>
 
     <script src="./js/script.js"></script>
   </body>

@@ -13,6 +13,9 @@ module.exports = {
       },
       aspectRatio: {
         "3/4": "3 / 4",
+        "4/3": "4 / 3",
+        "2/3": "2 / 3",
+        "4/5": "4 / 5",
       },
     },
     fontFamily: { Poppins: ["Poppins", "sans-serif"] },
