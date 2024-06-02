@@ -10,6 +10,9 @@ const contact = document.querySelector("#contact");
 
 const start2 = document.getElementById("starting");
 
+function mobilemenu() {
+  menu.classList.toggle("hidden");
+}
 btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
