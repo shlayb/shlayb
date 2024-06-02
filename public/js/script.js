@@ -36,9 +36,19 @@ window.onscroll = function () {
 };
 
 const mode = document.getElementById("dark-light");
+const modebtn = document.getElementById("dark-button");
 const html = document.querySelector("html");
 
 mode.addEventListener("click", () => {
+  if (html.classList.contains("dark")) {
+    html.classList.remove("dark");
+    mode.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
+  } else {
+    html.classList.add("dark");
+    mode.innerHTML = '<i class="fa-regular fa-lightbulb"></i>';
+  }
+});
+modebtn.addEventListener("click", () => {
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
     mode.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
