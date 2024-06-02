@@ -11,7 +11,7 @@
     <link href="./css/style.css" rel="stylesheet" />
     <title>Ayyubi</title>
   </head>
-  <body id="body" class="grid bg-gray-100">
+  <body id="body" class="dark:bg-dark w-full bg-gray-100">
     <div id="starting" class="font-Poppin container mx-auto flex h-screen w-lvw justify-center">
       <div class="my-auto">
         <button href="#home" class="starting my-auto flex rounded-xl bg-gray-800 px-7 py-3 text-xl font-semibold text-slate-200 shadow-xl delay-700">
@@ -20,27 +20,28 @@
         </button>
       </div>
     </div>
-    <nav class="ininav drop-shadow-pas hidden h-20 w-full bg-gray-100 font-Poppins">
-      <div class="mx-32 max-w-6xl px-8 max-lg:mx-auto max-lg:px-4">
+    <nav class="ininav drop-shadow-pas dark:bg-dark dark:drop-shadow-pas hidden w-full bg-gray-100 font-Poppins">
+      <div class="mx-auto max-w-6xl px-8 max-lg:mx-auto max-lg:px-4">
         <div class="flex">
           <div class="flex w-full justify-between">
             <!-- Website Logo -->
             <div class="max-lg:item-start max-lg:mx-0">
               <a href="#" class="flex items-center px-2 py-6">
-                <span class="text-2xl font-bold text-primary">Shlayb.dev</span>
+                <span class="dark:text-light text-2xl font-bold text-primary">Shlayb.dev</span>
               </a>
             </div>
             <!-- Primary Navbar items -->
             <div class="hidden space-x-1 align-middle text-primary md:flex">
-              <a href="#body" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">Home</a>
-              <a href="#aboutme" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">About</a>
-              <a href="#stack" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">Skill</a>
+              <a href="#body" class="dark:text-light px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">Home</a>
+              <a href="#aboutme" class="dark:text-light px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">About</a>
+              <a href="#stack" class="dark:text-light px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">Skill</a>
             </div>
           </div>
           <!-- Mobile menu button -->
-          <div class="flex items-center sm:hidden md:hidden">
+          <div class="flex items-center md:hidden">
+            <a id="dark-light" class="dark:text-light mx-5 px-2 py-7 text-xl font-semibold transition duration-300 hover:text-gray-900"><i class="fa-solid fa-lightbulb"></i></a>
             <button class="mobile-menu-button outline-none">
-              <svg class="h-7 w-7 text-gray-800" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="dark:text-light h-7 w-7 text-gray-800" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
@@ -51,34 +52,38 @@
       <div class="mobile-menu hidden md:hidden">
         <ul class="mx-5">
           <li>
-            <a href="#home" class="block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">Home</a>
+            <a href="#home" class="dark:text-light dark:border-light block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">Home</a>
           </li>
           <li>
-            <a href="#aboutme" class="block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">About</a>
+            <a href="#aboutme" class="dark:text-light dark:border-light block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">About</a>
           </li>
           <li>
-            <a href="#stack" class="block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">Skill</a>
+            <a href="#stack" class="dark:text-light dark:border-light block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">Skill</a>
           </li>
         </ul>
       </div>
     </nav>
-    <section id="home" class="inihome container mx-auto box-border hidden h-full max-w-screen-xl gap-0 bg-gray-100 p-0 font-Poppins">
+
+    <div id="gapp" class="relative hidden h-20 w-full bg-transparent"></div>
+
+    <section id="home" class="inihome dark:bg-dark container mx-auto box-border hidden h-auto max-w-screen-xl gap-0 bg-gray-100 p-0 font-Poppins">
       <div class="my-20 flex justify-center align-middle max-lg:mb-5 max-lg:mt-16 max-lg:grid max-lg:gap-0">
-        <div class="relative h-72 w-72 rounded-full shadow-2xl max-lg:mx-auto lg:hidden">
+        <div class="relative h-72 w-72 rounded-full shadow-2xl max-lg:mx-auto lg:hidden dark:shadow-slate-800">
           <img class="rounded-full object-cover" src="../src/profile pict.jpg" alt="image description" />
         </div>
         <div class="mx-16">
-          <p class="mt-16 justify-end text-2xl font-medium text-primary max-lg:mt-10 max-lg:text-center max-lg:text-xl">Hi 👋, i'm</p>
-          <p id="Sh" class="relative justify-end text-7xl font-semibold text-primary max-lg:text-center max-lg:text-4xl">Ayyubi</p>
-          <p id="al" class="relative mt-3 justify-end text-2xl font-normal text-primary max-lg:grid max-lg:justify-center max-lg:text-xl">Engineering Student</p>
+          <p class="dark:text-light mt-16 justify-end text-2xl font-medium text-primary max-lg:mt-10 max-lg:text-center max-lg:text-xl">Hi 👋, i'm</p>
+          <p id="Sh" class="dark:text-light relative justify-end text-7xl font-semibold text-primary max-lg:text-center max-lg:text-4xl">Ayyubi</p>
+          <p id="al" class="dark:text-light relative mt-3 justify-end text-2xl font-normal text-primary max-lg:grid max-lg:justify-center max-lg:text-xl">Engineering Student</p>
         </div>
-        <div class="relative h-72 w-72 rounded-full shadow-2xl max-lg:mx-auto max-lg:hidden">
+        <div class="relative h-72 w-72 rounded-full shadow-2xl max-lg:mx-auto max-lg:hidden dark:shadow-slate-800">
           <img class="rounded-full object-cover" src="../src/profile pict.jpg" alt="image description" />
         </div>
       </div>
     </section>
-    <section id="aboutme" class="iniabout mx-auto hidden h-lvh max-w-screen-xl p-0 font-Poppins max-lg:mt-16">
-      <div class="relative mx-40 my-20 mt-24 flex justify-center text-primary max-lg:mx-auto max-lg:mt-0 max-lg:grid">
+
+    <section id="aboutme" class="iniabout mx-auto hidden h-lvh max-w-screen-xl justify-center p-0 font-Poppins max-lg:mt-16 max-lg:w-full">
+      <div class="dark:text-light relative mx-auto mt-28 flex justify-center align-middle text-primary max-lg:mx-auto max-lg:mt-0 max-lg:grid">
         <h1 class="hidden text-2xl font-semibold max-lg:my-5 max-lg:block max-lg:text-center">About Me</h1>
         <div class="ml-10 aspect-3/4 h-80 rounded-t-xl border-b-[6px] border-black max-lg:mx-auto max-lg:mb-5">
           <img class="aspect-3/4 object-cover" src="./src/aboutme.png" alt="ganteng bgt" />
@@ -88,53 +93,59 @@
           <p class="text-lg font-medium">My name is</p>
           <p class="mb-1 text-5xl font-bold">Sholahudin</p>
           <p class="mb-4 text-2xl font-semibold">Al Ayyubi</p>
-          <div class="relative h-24 max-w-full">
+          <div class="relative h-24 max-w-[450px]">
             <p class="text-base font-normal">Love learning new things and have a strong curiosity. I am a freshman student at Yogyakarta State University with a passion for programming, math, and design.</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="stack" class="inistack mx-auto hidden h-full max-w-screen-xl font-Poppins max-lg:mt-16">
-      <h1 class="my-10 text-center text-5xl font-semibold text-primary max-lg:my-0 max-lg:mt-10">Skill Stack</h1>
-      <div class="relative m-5 my-20 flex justify-center text-primary max-lg:my-5 max-lg:grid">
-        <div class="mx-5 aspect-3/4 h-72 rounded-2xl bg-gray-200 text-center shadow-xl max-lg:my-4 max-lg:aspect-3/4 max-lg:w-72">
-          <div class="my-10">
-            <h1 class="relative my-5 text-center text-7xl font-medium">
-              <i class="fa-brands fa-python"></i>
-            </h1>
-            <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
-            <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
-              <div class="block h-full w-[70%] rounded-[5px] bg-scndary"></div>
+
+    <section id="stack" class="inistack mx-auto hidden h-lvh max-w-screen-xl justify-center font-Poppins max-lg:mt-16">
+      <div class="relative mx-auto my-20 justify-center text-primary max-lg:mx-auto max-lg:mt-0 max-lg:grid">
+        <h1 class="dark:text-light my-8 text-center text-5xl font-semibold text-primary max-lg:my-0 max-lg:mt-10">Skill Stack</h1>
+        <div class="dark:text-light relative m-5 my-10 flex justify-center text-primary max-lg:my-5 max-lg:grid">
+          <div class="skillstack">
+            <div class="my-10">
+              <h1 class="relative my-5 text-center text-7xl font-medium">
+                <i class="fa-brands fa-python"></i>
+              </h1>
+              <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
+              <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
+                <div class="block h-full w-[70%] rounded-[5px] bg-scndary"></div>
+              </div>
+              <p class="mx-3 text-center text-sm">I have proficient skills in Python programming, especially for various technical projects.</p>
             </div>
-            <p class="mx-3 text-center text-sm">I have proficient skills in Python programming, especially for various technical projects.</p>
           </div>
-        </div>
-        <div class="mx-5 aspect-3/4 h-72 rounded-2xl bg-gray-200 text-center shadow-xl max-lg:my-4 max-lg:aspect-3/4 max-lg:w-72">
-          <div class="my-10">
-            <h1 class="relative my-5 text-center text-7xl font-medium">
-              <i class="fa-brands fa-js"></i>
-            </h1>
-            <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
-            <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
-              <div class="block h-full w-[40%] rounded-[5px] bg-scndary"></div>
+          <div class="skillstack">
+            <div class="my-10">
+              <h1 class="relative my-5 text-center text-7xl font-medium">
+                <i class="fa-brands fa-js"></i>
+              </h1>
+              <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
+              <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
+                <div class="block h-full w-[40%] rounded-[5px] bg-scndary"></div>
+              </div>
+              <p class="mx-3 text-center text-sm">I am skilled in JS programming, with a strong focus on developing versatile projects.</p>
             </div>
-            <p class="mx-3 text-center text-sm">I am skilled in JS programming, with a strong focus on developing versatile projects.</p>
           </div>
-        </div>
-        <div class="mx-5 aspect-3/4 h-72 rounded-2xl bg-gray-200 text-center shadow-xl max-lg:my-4 max-lg:aspect-3/4 max-lg:w-72">
-          <div class="my-10">
-            <h1 class="relative my-5 text-center text-7xl font-medium">
-              <i class="fa-brands fa-figma"></i>
-            </h1>
-            <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
-            <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
-              <div class="block h-full w-[60%] rounded-[5px] bg-scndary"></div>
+          <div class="skillstack">
+            <div class="my-10">
+              <h1 class="relative my-5 text-center text-7xl font-medium">
+                <i class="fa-brands fa-figma"></i>
+              </h1>
+              <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
+              <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
+                <div class="block h-full w-[60%] rounded-[5px] bg-scndary"></div>
+              </div>
+              <p class="mx-3 text-center text-sm">I have proficient skills in Python programming, especially for various technical projects.</p>
             </div>
-            <p class="mx-3 text-center text-sm">I have proficient skills in Python programming, especially for various technical projects.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="" class="inistack mx-auto hidden h-lvh max-w-screen-xl justify-center font-Poppins max-lg:mt-16"></section>
+
     <script src="./js/script.js"></script>
   </body>
 </html>

@@ -9,6 +9,14 @@
 }
 
 .drop-shadow-pas {
-  --tw-drop-shadow: drop-shadow(0 2px 3px rgb(0 0 0 / 0.05));
+  --tw-drop-shadow: drop-shadow(0 2px 3px rgb(255 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.dark\:drop-shadow-pas:is(.dark *) {
+  --tw-drop-shadow: drop-shadow(0 2px 3px rgb(243 244 246 / 0.1)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.skillstack {
+  @apply dark:bg-semidark dark:shadow-xl dark:shadow-slate-800 mx-5 aspect-3/4 h-72 rounded-2xl bg-gray-200 text-center shadow-xl max-lg:my-4 max-lg:aspect-3/4 max-lg:w-72;
 }

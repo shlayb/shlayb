@@ -17,7 +17,9 @@ inistart.addEventListener("click", () => {
   start2.remove();
   nav.classList.remove("hidden");
   about.classList.remove("hidden");
+  about.classList.add("flex");
   stack.classList.remove("hidden");
+  stack.classList.add("flex");
 });
 
 window.onscroll = function () {
@@ -26,7 +28,22 @@ window.onscroll = function () {
 
   if (window.pageYOffset > fixednav) {
     header.classList.add("navbar-fixed");
+    document.getElementById("gapp").classList.remove("hidden");
   } else {
     header.classList.remove("navbar-fixed");
+    document.getElementById("gapp").classList.add("hidden");
   }
 };
+
+const mode = document.getElementById("dark-light");
+const html = document.querySelector("html");
+
+mode.addEventListener("click", () => {
+  if (html.classList.contains("dark")) {
+    html.classList.remove("dark");
+    mode.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
+  } else {
+    html.classList.add("dark");
+    mode.innerHTML = '<i class="fa-regular fa-lightbulb"></i>';
+  }
+});
