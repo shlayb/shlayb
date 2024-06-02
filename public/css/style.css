@@ -1180,7 +1180,7 @@ video {
   z-index: 9999;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-  opacity: 0.75;
+  opacity: 1;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
