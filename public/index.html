@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -7,40 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="https://i.pinimg.com/564x/3c/3a/d2/3c3ad2371c25000d72a7b3b4b7157603.jpg" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
     <title>Ayyubi</title>
   </head>
-  <body class="grid bg-gray-100">
-    <div id="starting" class="container flex w-lvw h-screen  justify-center font-Poppin mx-auto">
-      <div class="my-auto ">
-        <button href="#home" class="starting  flex text-slate-200 bg-slate-800 px-7 py-3 text-xl font-semibold rounded-xl"><svg class="animate-spin h-5 w-5 mr-3 bg-slate-200" viewBox="0 0 24 24"></svg>Start</button>
+  <body id="body" class="grid bg-gray-100">
+    <div id="starting" class="font-Poppin container mx-auto flex h-screen w-lvw justify-center">
+      <div class="my-auto">
+        <button href="#home" class="starting my-auto flex rounded-xl bg-gray-800 px-7 py-3 text-xl font-semibold text-slate-200 shadow-xl delay-700">
+          <img class="relative my-2 mr-3 h-4 animate-spin bg-gray-800 object-cover delay-200" src="./src/aboutme.png" alt="" />
+          Start
+        </button>
       </div>
     </div>
-    <nav class="ininav hidden bg-gray-100 font-Poppins">
-      <div class="max-w-6xl mx-32 px-8 max-lg:mx-auto max-lg:px-4">
+    <nav class="ininav drop-shadow-pas hidden h-20 w-full bg-gray-100 font-Poppins">
+      <div class="mx-32 max-w-6xl px-8 max-lg:mx-auto max-lg:px-4">
         <div class="flex">
           <div class="flex w-full justify-between">
             <!-- Website Logo -->
             <div class="max-lg:item-start max-lg:mx-0">
-              <a href="#" class="flex items-center py-6 px-2">
-                <span class="text-2xl font-bold text-gray-900">Shlayb.dev</span>
+              <a href="#" class="flex items-center px-2 py-6">
+                <span class="text-2xl font-bold text-primary">Shlayb.dev</span>
               </a>
             </div>
             <!-- Primary Navbar items -->
-            <div class="hidden md:flex align-middle space-x-1">
-              <a href="#home" class="py-7 text-lg px-2 text-gray-800 font-semibold hover:text-gray-900 transition duration-300">Home</a>
-              <a href="#aboutme" class="py-7 text-lg px-2 text-gray-800 font-semibold hover:text-gray-900 transition duration-300">About</a>
-              <a href="#stack" class="py-7 text-lg px-2 text-gray-800 font-semibold hover:text-gray-900 transition duration-300">Skill</a>
+            <div class="hidden space-x-1 align-middle text-primary md:flex">
+              <a href="#body" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">Home</a>
+              <a href="#aboutme" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">About</a>
+              <a href="#stack" class="px-2 py-7 text-lg font-semibold transition duration-300 hover:text-gray-900">Skill</a>
             </div>
           </div>
           <!-- Mobile menu button -->
-          <div class="md:hidden sm:hidden flex items-center">
-            <button class="outline-none mobile-menu-button">
-              <svg class="w-7 h-7 text-gray-800" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <div class="flex items-center sm:hidden md:hidden">
+            <button class="mobile-menu-button outline-none">
+              <svg class="h-7 w-7 text-gray-800" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
@@ -48,103 +48,93 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden md:hidden mobile-menu">
+      <div class="mobile-menu hidden md:hidden">
         <ul class="mx-5">
-          <li><a href="index.html" class="block border-b-[1px] border-gray-800 text-sm px-2 py-4 text-gray-600 font-semibold hover:bg-gray-200 transition duration-300">Home</a></li>
-          <li><a href="#aboutme" class="block border-b-[1px] border-gray-800 text-sm px-2 py-4 text-gray-600 font-semibold hover:bg-gray-200 transition duration-300">About</a></li>
-          <li><a href="#stack" class="block border-b-[1px] border-gray-800 text-sm px-2 py-4 text-gray-600 hover:bg-gray-200 font-semibold transition duration-300">Skill</a></li>
+          <li>
+            <a href="#home" class="block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">Home</a>
+          </li>
+          <li>
+            <a href="#aboutme" class="block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">About</a>
+          </li>
+          <li>
+            <a href="#stack" class="block border-b-[1px] border-primary px-2 py-4 text-sm font-semibold text-gray-600 transition duration-300 hover:bg-gray-200">Skill</a>
+          </li>
         </ul>
       </div>
     </nav>
-    <section id="home" class="inihome hidden container gap-0 bg-gray-100 mx-auto p-0 max-w-screen-xl h-full font-Poppins box-border">
-      <div class="flex align-middle max-lg:grid max-lg:gap-0 justify-center my-20 max-lg:mt-16 max-lg:mb-5">
-        <div class="relative w-72 h-72 lg:hidden rounded-full max-lg:mx-auto shadow-2xl">
-          <img class="object-cover rounded-full" src="../src/profile pict.jpg" alt="image description" />
+    <section id="home" class="inihome container mx-auto box-border hidden h-full max-w-screen-xl gap-0 bg-gray-100 p-0 font-Poppins">
+      <div class="my-20 flex justify-center align-middle max-lg:mb-5 max-lg:mt-16 max-lg:grid max-lg:gap-0">
+        <div class="relative h-72 w-72 rounded-full shadow-2xl max-lg:mx-auto lg:hidden">
+          <img class="rounded-full object-cover" src="../src/profile pict.jpg" alt="image description" />
         </div>
         <div class="mx-16">
-          <p class="text-2xl font-medium justify-end mt-16 max-lg:text-xl max-lg:mt-10 max-lg:text-center">Hi, i'm</p>
-          <p id="Sh" class="text-7xl font-semibold relative justify-end max-lg:text-4xl max-lg:text-center">Ayyubi</p>
-          <p id="al" class="text-2xl font-normal relative mt-3 justify-end max-lg:grid max-lg:justify-center max-lg:text-xl">Engineering Student</p>
+          <p class="mt-16 justify-end text-2xl font-medium text-primary max-lg:mt-10 max-lg:text-center max-lg:text-xl">Hi 👋, i'm</p>
+          <p id="Sh" class="relative justify-end text-7xl font-semibold text-primary max-lg:text-center max-lg:text-4xl">Ayyubi</p>
+          <p id="al" class="relative mt-3 justify-end text-2xl font-normal text-primary max-lg:grid max-lg:justify-center max-lg:text-xl">Engineering Student</p>
         </div>
-        <div class="relative w-72 h-72 max-lg:hidden rounded-full max-lg:mx-auto shadow-2xl">
-          <img class="object-cover rounded-full" src="../src/profile pict.jpg" alt="image description" />
+        <div class="relative h-72 w-72 rounded-full shadow-2xl max-lg:mx-auto max-lg:hidden">
+          <img class="rounded-full object-cover" src="../src/profile pict.jpg" alt="image description" />
         </div>
       </div>
     </section>
-    <section id="aboutme" class="iniabout hidden mx-auto p-0 max-w-screen-xl h-lvh font-Poppins max-lg:mt-16">
-      <div class="relative flex max-lg:grid justify-center mt-24 mx-40 max-lg:mx-auto max-lg:mt-0">
-        <h1 class="hidden text-2xl font-semibold max-lg:block max-lg:text-center max-lg:my-5">About Me</h1>
-        <div class="h-80 ml-10 rounded-t-xl aspect-3/4 border-b-[6px] border-black max-lg:mx-auto max-lg:mb-5">
+    <section id="aboutme" class="iniabout mx-auto hidden h-lvh max-w-screen-xl p-0 font-Poppins max-lg:mt-16">
+      <div class="relative mx-40 my-20 mt-24 flex justify-center text-primary max-lg:mx-auto max-lg:mt-0 max-lg:grid">
+        <h1 class="hidden text-2xl font-semibold max-lg:my-5 max-lg:block max-lg:text-center">About Me</h1>
+        <div class="ml-10 aspect-3/4 h-80 rounded-t-xl border-b-[6px] border-black max-lg:mx-auto max-lg:mb-5">
           <img class="aspect-3/4 object-cover" src="./src/aboutme.png" alt="ganteng bgt" />
         </div>
-        <div class="mx-16 max-lg:text-center max-lg:mt-5">
-          <h1 class="text-2xl font-semibold mb-10 my-3 max-lg:hidden">About Me</h1>
+        <div class="mx-16 max-lg:mt-5 max-lg:text-center">
+          <h1 class="my-3 mb-10 text-2xl font-semibold max-lg:hidden">About Me</h1>
           <p class="text-lg font-medium">My name is</p>
-          <p class="text-4xl font-bold mb-1">Sholahudin</p>
-          <p class="text-2xl font-semibold mb-4">Al Ayyubi</p>
+          <p class="mb-1 text-5xl font-bold">Sholahudin</p>
+          <p class="mb-4 text-2xl font-semibold">Al Ayyubi</p>
           <div class="relative h-24 max-w-full">
             <p class="text-base font-normal">Love learning new things and have a strong curiosity. I am a freshman student at Yogyakarta State University with a passion for programming, math, and design.</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="stack" class="inistack hidden mx-auto max-w-screen-xl h-full font-Poppins max-lg:mt-16">
-      <h1 class="text-5xl font-semibold text-center my-10 max-lg:my-0 max-lg:mt-10">Skill Stack</h1>
-      <div class="relative flex max-lg:grid justify-center my-20 m-5 max-lg:my-5">
-        <div class="mx-5 text-center h-72 max-lg:w-72 max-lg:aspect-3/4 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
+    <section id="stack" class="inistack mx-auto hidden h-full max-w-screen-xl font-Poppins max-lg:mt-16">
+      <h1 class="my-10 text-center text-5xl font-semibold text-primary max-lg:my-0 max-lg:mt-10">Skill Stack</h1>
+      <div class="relative m-5 my-20 flex justify-center text-primary max-lg:my-5 max-lg:grid">
+        <div class="mx-5 aspect-3/4 h-72 rounded-2xl bg-gray-200 text-center shadow-xl max-lg:my-4 max-lg:aspect-3/4 max-lg:w-72">
           <div class="my-10">
-            <h1 class="text-7xl font-medium relative text-center my-5"><i class="fa-brands fa-python"></i></h1>
+            <h1 class="relative my-5 text-center text-7xl font-medium">
+              <i class="fa-brands fa-python"></i>
+            </h1>
             <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
-            <div class="mx-4 my-6 h-5 bg-gray-300 rounded-[5px]">
-              <div class="block bg-gray-400 h-full w-[70%] rounded-[5px]"></div>
+            <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
+              <div class="block h-full w-[70%] rounded-[5px] bg-scndary"></div>
             </div>
-            <p class="mx-3 text-sm text-center">I have proficient skills in Python programming, especially for various technical projects.</p>
+            <p class="mx-3 text-center text-sm">I have proficient skills in Python programming, especially for various technical projects.</p>
           </div>
         </div>
-        <div class="mx-5 text-center h-72 max-lg:w-72 max-lg:aspect-3/4 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
+        <div class="mx-5 aspect-3/4 h-72 rounded-2xl bg-gray-200 text-center shadow-xl max-lg:my-4 max-lg:aspect-3/4 max-lg:w-72">
           <div class="my-10">
-            <h1 class="text-7xl font-medium relative text-center my-5"><i class="fa-brands fa-js"></i></h1>
+            <h1 class="relative my-5 text-center text-7xl font-medium">
+              <i class="fa-brands fa-js"></i>
+            </h1>
             <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
-            <div class="mx-4 my-6 h-5 bg-gray-300 rounded-[5px]">
-              <div class="block bg-gray-400 h-full w-[40%] rounded-[5px]"></div>
+            <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
+              <div class="block h-full w-[40%] rounded-[5px] bg-scndary"></div>
             </div>
-            <p class="mx-3 text-sm text-center">I am skilled in JS programming, with a strong focus on developing versatile projects.</p>
+            <p class="mx-3 text-center text-sm">I am skilled in JS programming, with a strong focus on developing versatile projects.</p>
           </div>
         </div>
-        <div class="mx-5 text-center h-72 max-lg:w-72 max-lg:aspect-3/4 aspect-3/4 bg-gray-200 rounded-2xl shadow-xl max-lg:my-4">
+        <div class="mx-5 aspect-3/4 h-72 rounded-2xl bg-gray-200 text-center shadow-xl max-lg:my-4 max-lg:aspect-3/4 max-lg:w-72">
           <div class="my-10">
-            <h1 class="text-7xl font-medium relative text-center my-5"><i class="fa-brands fa-figma"></i></h1>
+            <h1 class="relative my-5 text-center text-7xl font-medium">
+              <i class="fa-brands fa-figma"></i>
+            </h1>
             <!-- <h2 class="text-3xl font-medium relative text-center mt-3">Figma</h2> -->
-            <div class="mx-4 my-6 h-5 bg-gray-300 rounded-[5px]">
-              <div class="block bg-gray-400 h-full w-[60%] rounded-[5px]"></div>
+            <div class="mx-4 my-6 h-5 rounded-[5px] bg-gray-300">
+              <div class="block h-full w-[60%] rounded-[5px] bg-scndary"></div>
             </div>
-            <p class="mx-3 text-sm text-center">I have proficient skills in Python programming, especially for various technical projects.</p>
+            <p class="mx-3 text-center text-sm">I have proficient skills in Python programming, especially for various technical projects.</p>
           </div>
         </div>
       </div>
     </section>
-    <script>
-      const btn = document.querySelector('button.mobile-menu-button');
-      const menu = document.querySelector('.mobile-menu');
-      const inistart = document.querySelector('.starting');
-      const nav = document.querySelector('.ininav');
-      const home = document.querySelector('.inihome');
-      const about = document.querySelector('.iniabout');
-      const stack = document.querySelector('.inistack');
-
-      const start2 = document.getElementById('starting')
-
-      btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
-      inistart.addEventListener('click', () => {
-        start2.remove()
-        nav.classList.toggle('hidden');
-        home.classList.toggle('hidden');
-        home.classList.toggle('max-lg:grid');
-        about.classList.toggle('hidden');
-        stack.classList.toggle('hidden');
-      });
-    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
