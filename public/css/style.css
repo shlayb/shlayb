@@ -845,6 +845,10 @@ video {
   max-width: 450px;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -1175,9 +1179,16 @@ video {
   transition-duration: 500ms;
 }
 
+/* * {
+  outline: 1px solid red;
+} */
+
+/* Uncomment to see the outline of all elements */
+
 .navbar-fixed {
   position: fixed;
   z-index: 9999;
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   opacity: 1;
